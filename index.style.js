@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import App from './index';
 
 const HeaderSection = styled.section`
     width: 100vw;
@@ -20,7 +21,25 @@ const KeillerGif = styled.img`
     // animation: ${showHide} 5s ease-in;
 `;
 
-export { HeaderSection, Paragraph, KeillerGif };
+const Redacted = styled.span`
+    position: relative;
+    font-family: 'Special Elite';
+    white-space: pre;
+
+::after {
+      background: black;
+      border-radius: 0.1em;
+      box-shadow: 0 0 1px rgba(0,0,0,0.35);
+      content: " ";
+      height: 1.2em;
+      width: ${props => props.width || 100}%;
+      left: 0;
+      position: absolute;
+      transform: skewY(-5deg) rotate(5deg);
+    }
+  `;
+
+export { HeaderSection, Paragraph, KeillerGif, Redacted };
 
 
 
