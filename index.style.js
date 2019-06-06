@@ -18,31 +18,8 @@ const Paragraph = styled.p`
 const KeillerGif = styled.img`
     width: 25em;
     padding: 2em;
-    // animation: ${showHide} 5s ease-in;
+    animation: ${showHide} 5s ease-in;
 `;
-
-const Redacted = styled.span`
-    position: relative;
-    font-family: 'Special Elite';
-    white-space: pre;
-
-::after {
-      background: black;
-      border-radius: 0.1em;
-      box-shadow: 0 0 1px rgba(0,0,0,0.35);
-      content: " ";
-      height: 1.2em;
-      width: ${props => props.width || 100}%;
-      left: 0;
-      position: absolute;
-      transform: skewY(-5deg) rotate(5deg);
-    }
-  `;
-
-export { HeaderSection, Paragraph, KeillerGif, Redacted };
-
-
-
 
 const showHide = keyframes`
   from {
@@ -53,3 +30,28 @@ const showHide = keyframes`
     width: 100%;
   }
 `;
+
+const Redacted = styled.span`
+    position: relative;
+    font-family: 'Special Elite';
+    white-space: pre;
+    
+    ::after {
+          background: black;
+          border-radius: 0.1em;
+          box-shadow: 0 0 1px rgba(0,0,0,0.35);
+          content: " ";
+          height: 1.2em;
+          display: inline-block;
+          animation: ${showHide} 2s ease-in forwards;
+          left: 0;
+          position: absolute;
+          transform: skewY(-5deg) rotate(5deg);
+        }
+      `;
+
+export { HeaderSection, Paragraph, KeillerGif, Redacted, showHide };
+
+
+
+
