@@ -1,48 +1,8 @@
 import React from "react";
 import { render } from "react-dom";
 import keillerFilePath from "./assets/keiller.gif";
-import styled, { keyframes } from 'styled-components';
-
-
-
-
-
-const HeaderSection = styled.section`
-    width: 100vw;
-    height: 100vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    `
-
-const Paragraph = styled.p`
-    font-family: 'Special Elite';
-    text-align: center;
-    padding: 0em 5em;
-    `;
-
-const KeillerGif = styled.img`
-    width: 25em;
-    padding: 2em;
-    // animation: ${showHide} 5s ease-in;
-`;
-
-
-
-
-const showHide = keyframes`
-  from {
-    width: 0%;
-  }
-
-  to {
-    width: 100%;
-  }
-`;
-
-
-
+import styled from 'styled-components';
+import { HeaderSection, Paragraph, KeillerGif } from './index.style';
 
 const App = () => {
     const [ Width, setWidth ] = React.useState(0);
