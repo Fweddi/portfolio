@@ -43,12 +43,14 @@ const Redacted = styled.span`
           content: " ";
           height: 1.2em;
           display: inline-block;
-          animation: ${showHide} 2s ease-in forwards;
+          width: 0%;
+          animation: ${showHide} 2s linear ${props => props.delay || 2}s forwards;
           left: 0;
           position: absolute;
           transform: skewY(-5deg) rotate(5deg);
         }
       `;
+    
 
 export { HeaderSection, Paragraph, KeillerGif, Redacted, showHide };
 

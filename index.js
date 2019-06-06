@@ -9,7 +9,7 @@ const App = () => {
         <HeaderSection>
             <KeillerGif src={keillerFilePath} />
             <Paragraph>
-                Networks of <Redacted>property</Redacted> developments create zones of control, landscapes pulsing with symbolism and intent.
+                Networks of <Redacted delay='4'>property</Redacted> developments create zones of control, landscapes pulsing with symbolism and intent.
             </Paragraph>
 
             {/* <Paragraph>
@@ -17,7 +17,7 @@ const App = () => {
             </Paragraph> */}
 
             <Paragraph>
-                The signs are everywhere – you hear the faint crackling of power, notice where it lies… encoded, encrypted… not concentrated in the City of London or Canary Wharf, but dispersed, iridescent in <Redacted>Italianate gardens</Redacted>, <Redacted>chequerboard paving</Redacted>, <Redacted>columns and neoclassical facades…</Redacted>
+                The signs are everywhere – you hear the faint crackling of power, notice where it lies… encoded, encrypted… not concentrated in the City of London or Canary Wharf, but dispersed, iridescent in <Redacted delay='12'>Italianate gardens</Redacted>, <Redacted delay='14'>chequerboard paving</Redacted>, <Redacted delay='16'>columns and neoclassical facades…</Redacted>
             </Paragraph>
 
             <Paragraph>
