@@ -35,7 +35,7 @@ const Paragraph = styled.p`
 `;
 
 const KeillerGif = styled.img`
-  max-height: 40vh;
+  max-height: 50vh;
   margin: 1em;
   border: solid 1px black;
 `;
@@ -188,7 +188,11 @@ const CVParagraph = styled.p`
   font-family: "Cutive Mono", monospace;
   font-size: 1rem;
   height: auto;
-  width: 80%;
+  width: 90%;
+  color: black;
+`;
+
+const ProjectLink = styled.a`
   color: black;
 `;
 
@@ -209,5 +213,6 @@ export {
   CVSection,
   CVTop,
   CVBottom,
-  CVParagraph
+  CVParagraph,
+  ProjectLink
 };

@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 import keillerFilePath from "./assets/keiller.gif";
 import bioFilePath from "./assets/Freddie.jpg";
-import { HeaderSection, HeaderTop, HeaderBottom, Paragraph, KeillerGif, Redacted, Attribution, Arrow, BioSection, BioImage, BioTop, BioBottom, BioParagraph, CVSection, CVTop, CVBottom, CVParagraph } from './index.style';
+import { HeaderSection, HeaderTop, HeaderBottom, Paragraph, KeillerGif, Redacted, Attribution, Arrow, BioSection, BioImage, BioTop, BioBottom, BioParagraph, CVSection, CVTop, CVBottom, CVParagraph, ProjectLink } from './index.style';
 
 const App = () => {
     const infoObject = {
@@ -76,7 +76,7 @@ const App = () => {
             <BioParagraph><h2 id='about'>About Me</h2>Hi, I'm Freddie, an aspiring full stack developer. For the last four months I have been honing my skills at Founders and Coders, an incredible not-for-profit bootcamp that survives on the principle of peer-led learning. The people I've met here in Finsbury Park have not only become great programmers, but great friends too.
             </BioParagraph>
             <BioParagraph> 
-            Walking through Finsbury Park each day, you see so much. Friends reunite, drivers clash; strangers smoke and partners part. It's hard to pinpoint the impulse that drives this place, but it definitely wouldn't be the same without its architecture. Between the pavecracks and the arches, the bottlenecks and the mosque, there's something irresistable and irreducable here shaping the way we think.
+            Walking through Finsbury Park each day, you see so much. Friends reunite, drivers clash; strangers smoke and lovers part. It's hard to pinpoint the impulse that drives this place, but it definitely wouldn't be the same without its architecture. Between the pavecracks and the arches, the bottlenecks and the mosque, there's something irresistable and irreducable here shaping the way we think.
             </BioParagraph>
             <BioParagraph>
             Halfway through the course, I realised that the web works the same way. Each website is a building, with the web our path between them. As a developer, I want to build websites that leave a lasting mark on those that read my work, in the same way that Finsbury Park has left a lasting impression on me.
@@ -88,29 +88,27 @@ const App = () => {
         <CVSection>
         <CVTop>
             <CVParagraph>
+                <h2 id='about'>Projects</h2>
                 A year ago, I graduated from Cambridge with a first class degree in Classics. What I loved about the course was how I was able to draw so many different disciplines together (history, literature, philosophy, art) into one coherent whole. This is why I am drawn to developing across the stack, as I like to work with both form and function.
-
-
             </CVParagraph>
+            <CVParagraph>
+                The following projects I hope demonstrate the range of my abilities. Two of the projects (Tinkl & Recycling Heroes) I helped build at Founders and Coders, where I led on DevOps and UX respectively. The other (Medias Res) I built by myself in my spare time.
+            </CVParagraph>
+           
         </CVTop>
 
         <CVBottom>
-            <CVParagraph>
-                Projects:
-                <ul>
-                    <li>medias res</li>
+        <CVParagraph>
+                    <ProjectLink href='https://github.com/Fweddi/mediasres'><li>Medias Res</li></ProjectLink>
                     <i>oAuth, REST, node.js</i>
-                    <li>tinkl</li>
+                    <p>A site to see your digital bookshelf.</p>
+                    <ProjectLink href='https://github.com/FAC-Sixteen/Tinkl'><li>Tinkl</li></ProjectLink>
                     <i>handlebars, express, PostgreSQL, heroku, travis, tape</i>
-                    <li>recycling heroes</li>
+                    <p>An app to find the nearest suitable toilet in London.</p>
+                    <ProjectLink href='https://github.com/FAC-Sixteen/RE4.W'><li>Recycling Heroes</li></ProjectLink>
                     <i>react.js, p5.js, styled-components, netlify, jest</i>
-                </ul>
+                    <p>A game to teach kids (and adults) what they can and can't recycle.</p>
             </CVParagraph>
-
-            <CVParagraph>
-                CV here.
-            </CVParagraph>
-
         </CVBottom>
 
 

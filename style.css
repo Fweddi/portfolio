@@ -9,6 +9,10 @@ html {
     scroll-behavior: smooth; 
 }
 
+li {
+    list-style: none;
+}
+
 
 /* Phone */
 @media only screen and (max-width:320px) {
