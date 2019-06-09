@@ -2,7 +2,8 @@ import styled, { keyframes } from "styled-components";
 
 const HeaderSection = styled.section`
   width: 100vw;
-  min-height: 100vh;
+  margin-top: 10vh;
+  min-height: 90vh;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -35,7 +36,7 @@ const Paragraph = styled.p`
 `;
 
 const KeillerGif = styled.img`
-  max-height: 50vh;
+  max-height: 40vh;
   margin: 1em;
   border: solid 1px black;
 `;
@@ -120,99 +121,13 @@ const Redacted = styled.span`
   }
 `;
 
-const BioSection = styled.section`
-  width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #60677F;
-`;
-
-const BioTop = styled.div`
-  width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const BioBottom = styled.div`
-  width: 50vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-`;
-
-const BioImage = styled.img`
-  max-height: 80vh;
-  border: solid 1px #FBF9FE;
-`
-
-const BioParagraph = styled.p`
-  font-family: "Cutive Mono", monospace;
-  font-size: 1rem;
-  height: auto;
-  width: 80%;
-  color: #FBF9FE;
-`;
-
-const CVSection = styled.section`
-width: 100vw;
-min-height: 100vh;
-display: flex;
-flex-flow: row;
-justify-content: center;
-align-items: center;
-background-color: #FBF9FE;
-`;
-
-const CVTop = styled.div`
-  width: 50vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-`;
-
-const CVBottom = styled.div`
-  width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-`;
-
-const CVParagraph = styled.p`
-  font-family: "Cutive Mono", monospace;
-  font-size: 1rem;
-  height: auto;
-  width: 90%;
-  color: black;
-`;
-
-const ProjectLink = styled.a`
-  color: black;
-`;
-
 export {
-  HeaderTop,
-  HeaderBottom,
-  HeaderSection,
-  Paragraph,
-  KeillerGif,
-  Redacted,
-  Attribution,
-  Arrow,
-  BioSection,
-  BioTop,
-  BioBottom,
-  BioImage,
-  BioParagraph,
-  CVSection,
-  CVTop,
-  CVBottom,
-  CVParagraph,
-  ProjectLink
-};
+    HeaderTop,
+    HeaderBottom,
+    HeaderSection,
+    Paragraph,
+    KeillerGif,
+    Redacted,
+    Attribution,
+    Arrow,
+}
