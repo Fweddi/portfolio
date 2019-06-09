@@ -31,6 +31,7 @@ const Paragraph = styled.p`
   text-align: center;
   height: auto;
   width: 80%;
+  margin-block-end: 0em;
 `;
 
 const KeillerGif = styled.img`
@@ -43,6 +44,7 @@ const Attribution = styled.a`
   color: black;
   font-family: "Cutive Mono", monospace;
   text-align: center;
+  margin-block-start: 1em;
 `
 
 const Arrow = styled.a`
@@ -125,7 +127,7 @@ const BioSection = styled.section`
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  background-color: #FBF9FE;
+  background-color: #60677F;
 `;
 
 const BioTop = styled.div`
@@ -145,7 +147,7 @@ const BioBottom = styled.div`
 
 const BioImage = styled.img`
   max-height: 80vh;
-  border: solid 1px black;
+  border: solid 1px #FBF9FE;
 `
 
 const BioParagraph = styled.p`
@@ -153,6 +155,7 @@ const BioParagraph = styled.p`
   font-size: 1rem;
   height: auto;
   width: 80%;
+  color: #FBF9FE;
 `;
 
 const CVSection = styled.section`
@@ -178,6 +181,15 @@ const CVBottom = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+`;
+
+const CVParagraph = styled.p`
+  font-family: "Cutive Mono", monospace;
+  font-size: 1rem;
+  height: auto;
+  width: 80%;
+  color: black;
 `;
 
 export {
@@ -196,5 +208,6 @@ export {
   BioParagraph,
   CVSection,
   CVTop,
-  CVBottom
+  CVBottom,
+  CVParagraph
 };

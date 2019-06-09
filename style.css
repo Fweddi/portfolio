@@ -1,6 +1,9 @@
 p::selection { background-color: yellow; }
 span::selection { background-color: yellow; }
 a::selection { background-color: yellow; }
+ul::selection { background-color: yellow; }
+li::selection { background-color: yellow; }
+i::selection { background-color: yellow; }
 
 html {
     scroll-behavior: smooth; 
