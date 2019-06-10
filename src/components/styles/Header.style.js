@@ -56,7 +56,7 @@ const KeillerGif = styled.img`
 `;
 
 const Attribution = styled.a`
-  color: black;
+  // color: black;
   font-family: "Cutive Mono", monospace;
   text-align: center;
   margin-block-start: 1em;

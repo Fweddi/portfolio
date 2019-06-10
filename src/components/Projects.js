@@ -1,4 +1,5 @@
 import React from "react";
+import PDFfilepath from "../assets/Freddie Preece CV.pdf";
 import { ProjectAnchor, ProjectSection, ProjectTop, ProjectBottom, ProjectParagraph, ProjectLink, ProjectHeader } from "./styles/Projects.style";
 
 const Projects = () => {
@@ -13,20 +14,23 @@ const Projects = () => {
             <ProjectParagraph>
                 The following projects I hope demonstrate the range of my abilities. Two of the projects (Tinkl & Recycling Heroes) I helped build at Founders and Coders, where I led on DevOps and UX respectively. The other (Medias Res) I built by myself in my spare time.
             </ProjectParagraph>
+            <ProjectParagraph>
+                To see more about me, take a look at <a href={PDFfilepath} target='_blank'>my CV</a>.
+            </ProjectParagraph>
            
         </ProjectTop>
 
         <ProjectBottom>
         <ProjectParagraph>
-                    <ProjectLink href='https://github.com/Fweddi/mediasres'><li>Medias Res</li></ProjectLink>
+                    <ProjectLink href='https://github.com/Fweddi/mediasres' target='_blank'><li>Medias Res</li></ProjectLink>
                     <i>oAuth, REST, node.js</i><br/><br/>
                     A site to see your digital bookshelf.
                     <br/><br/>
-                    <ProjectLink href='https://github.com/FAC-Sixteen/Tinkl'><li>Tinkl</li></ProjectLink>
+                    <ProjectLink href='https://github.com/FAC-Sixteen/Tinkl' target='_blank'><li>Tinkl</li></ProjectLink>
                     <i>handlebars, express, PostgreSQL, heroku, travis, tape</i><br/><br/>
                     An app to find the nearest suitable toilet in London.
                     <br/><br/>
-                    <ProjectLink href='https://github.com/FAC-Sixteen/RE4.W'><li>Recycling Heroes</li></ProjectLink>
+                    <ProjectLink href='https://github.com/FAC-Sixteen/RE4.W' target='_blank'><li>Recycling Heroes</li></ProjectLink>
                     <i>react.js, hooks, p5.js, styled-components, netlify, jest</i><br/><br/>
                     A game to teach kids (and adults) what they can and can't recycle.<br/>
             </ProjectParagraph>

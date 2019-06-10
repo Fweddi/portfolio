@@ -49,7 +49,7 @@ const ProjectParagraph = styled.p`
 `;
 
 const ProjectLink = styled.a`
-  color: black;
+  // color: black;
 `;
 
 const ProjectHeader = styled.h2`
