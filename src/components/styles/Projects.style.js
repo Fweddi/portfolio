@@ -3,18 +3,22 @@ import styled from "styled-components";
 const ProjectAnchor = styled.a`
 display: block;
 position: relative;
-top: -55vh;
+top: -10vh;
 visibility: hidden;
 `;
 
 const ProjectSection = styled.section`
 width: 100vw;
-min-height: 90vh;
+height: 90vh;
 display: flex;
 flex-flow: row;
 justify-content: center;
 align-items: center;
 background-color: #FBF9FE;
+@media only screen and (max-width:768px) {
+  flex-direction: column;
+  height: auto;
+}
 `;
 
 const ProjectTop = styled.div`
@@ -23,6 +27,9 @@ const ProjectTop = styled.div`
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  @media only screen and (max-width:768px) {
+    width: 100vw;
+  }
 `;
 
 const ProjectBottom = styled.div`

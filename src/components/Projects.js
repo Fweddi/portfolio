@@ -19,14 +19,16 @@ const Projects = () => {
         <ProjectBottom>
         <ProjectParagraph>
                     <ProjectLink href='https://github.com/Fweddi/mediasres'><li>Medias Res</li></ProjectLink>
-                    <i>oAuth, REST, node.js</i>
+                    <i>oAuth, REST, node.js</i><br/><br/>
                     A site to see your digital bookshelf.
+                    <br/><br/>
                     <ProjectLink href='https://github.com/FAC-Sixteen/Tinkl'><li>Tinkl</li></ProjectLink>
-                    <i>handlebars, express, PostgreSQL, heroku, travis, tape</i>
+                    <i>handlebars, express, PostgreSQL, heroku, travis, tape</i><br/><br/>
                     An app to find the nearest suitable toilet in London.
+                    <br/><br/>
                     <ProjectLink href='https://github.com/FAC-Sixteen/RE4.W'><li>Recycling Heroes</li></ProjectLink>
-                    <i>react.js, p5.js, styled-components, netlify, jest</i>
-                    A game to teach kids (and adults) what they can and can't recycle.
+                    <i>react.js, hooks, p5.js, styled-components, netlify, jest</i><br/><br/>
+                    A game to teach kids (and adults) what they can and can't recycle.<br/>
             </ProjectParagraph>
         </ProjectBottom>
 

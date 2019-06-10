@@ -10,12 +10,15 @@ const HeaderAnchor = styled.a`
 const HeaderSection = styled.section`
   width: 100vw;
   margin-top: 10vh;
-  min-height: 90vh;
+  height: 90vh;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   background-color: #FBF9FE;
+  @media only screen and (max-width:768px) {
+    height: auto;
+  }
 `;
 
 const HeaderTop = styled.div`
@@ -46,6 +49,10 @@ const KeillerGif = styled.img`
   max-height: 40vh;
   margin: 1em;
   border: solid 1px black;
+
+  @media only screen and (max-width:768px) {
+    height: 30vh;
+  }
 `;
 
 const Attribution = styled.a`
@@ -58,7 +65,7 @@ const Attribution = styled.a`
 const Arrow = styled.a`
   font-family: "Cutive Mono", monospace;
   color: black;
-  margin-top: 1em;
+  margin: 1em;
   text-align: center;
   text-decoration: none;
   opacity: 0;
