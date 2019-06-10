@@ -1,13 +1,25 @@
 import styled from "styled-components";
 
+const BioAnchor = styled.a`
+    display: block;
+    position: relative;
+    top: -55vh;
+    visibility: hidden;
+`;
+
 const BioSection = styled.section`
   width: 100vw;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: center;
   background-color: #60677F;
+`;
+
+const BioHeader = styled.a`
+  font-family: "Cutive Mono", monospace;
+  color: #FBF9FE;
 `;
 
 const BioTop = styled.div`
@@ -39,9 +51,11 @@ const BioParagraph = styled.p`
 `;
 
 export {
+    BioAnchor,
     BioSection,
     BioTop,
     BioBottom,
     BioImage,
-    BioParagraph
+    BioParagraph,
+    BioHeader
 }

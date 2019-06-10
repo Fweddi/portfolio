@@ -10,14 +10,24 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 border-bottom: solid 1px black;
+z-index: 2;
 `
 
-const NavHeading = styled.p`
+const NavHeading = styled.a`
 color: black;
-padding: 0em 2em;
+margin: 0em 2em;
+text-decoration: none;
 font-family: 'Julius Sans One', sans-serif;
 letter-spacing: 0.5em;
 `
+
+const NavSound = styled.span`
+  color: black;
+  font-family: "Cutive Mono", monospace;
+  padding: 0em 2em;
+  align-self: center;
+`
+
 const NavLink = styled.a`
 color: black;
 font-family: "Cutive Mono", monospace;
@@ -28,5 +38,6 @@ padding: 0em 2em;
 export {
     NavBar,
     NavLink,
-    NavHeading
+    NavHeading,
+    NavSound
   };

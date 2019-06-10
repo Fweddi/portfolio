@@ -1,5 +1,5 @@
 import React from "react";
-import { HeaderSection, HeaderTop, HeaderBottom, Paragraph, KeillerGif, Redacted, Attribution, Arrow } from './styles/Header.style.js';
+import { HeaderAnchor, HeaderSection, HeaderTop, HeaderBottom, Paragraph, KeillerGif, Redacted, Attribution, Arrow } from './styles/Header.style.js';
 import keillerFilePath from "../assets/keiller.gif";
 
 const aDuration = (i) => i.length / 15;
@@ -7,6 +7,7 @@ const aDuration = (i) => i.length / 15;
 const Header = ({info}) => {
     return (
         <HeaderSection>
+            <HeaderAnchor id='header'/>
             <HeaderTop>
                 <KeillerGif src={keillerFilePath} />
             </HeaderTop>
@@ -33,7 +34,7 @@ const Header = ({info}) => {
                     />
                 </Paragraph>
                 <Attribution href={info.link}>{info.attribution}</Attribution>
-                <Arrow href='#bio'> ↓ </Arrow>
+                <Arrow href='#about'> ↓ </Arrow>
             </HeaderBottom>
         </HeaderSection>
     )

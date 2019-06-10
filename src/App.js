@@ -3,10 +3,11 @@ import { Navigation, Header, Biography, Projects } from "./components/index";
 import { infoObject, changeInfo } from "./utils/index";
 
 const App = () => {
+    
     const [info, setInfo] = React.useState(infoObject);
 
     React.useEffect(() => {
-        const redactedTimeout = window.setTimeout(changeInfo, 17000);
+        const redactedTimeout = window.setTimeout(() => changeInfo(setInfo), 17000);
         return () => window.clearTimeout(redactedTimeout);
     }, [])
 

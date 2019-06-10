@@ -1,5 +1,12 @@
 import styled, { keyframes } from "styled-components";
 
+const HeaderAnchor = styled.a`
+    display: block;
+    position: relative;
+    top: -55vh;
+    visibility: hidden;
+`;
+
 const HeaderSection = styled.section`
   width: 100vw;
   margin-top: 10vh;
@@ -122,6 +129,7 @@ const Redacted = styled.span`
 `;
 
 export {
+    HeaderAnchor,
     HeaderTop,
     HeaderBottom,
     HeaderSection,

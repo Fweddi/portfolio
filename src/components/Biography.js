@@ -1,16 +1,17 @@
     
 import React from "react";
 import bioFilePath from "../assets/Freddie.jpg";
-import { BioSection, BioImage, BioTop, BioBottom, BioParagraph } from "./styles/Biography.style";
+import { BioAnchor, BioSection, BioImage, BioTop, BioBottom, BioParagraph, BioHeader } from "./styles/Biography.style";
 
 const Biography = () => {
     return (
     <BioSection>
+            <BioAnchor id='about'/> 
             <BioTop>
                 <BioImage src={bioFilePath} />
             </BioTop>
             <BioBottom>
-                <h2 id='about'>About Me</h2>
+                <BioHeader>About Me</BioHeader>
                 <BioParagraph>Hi, I'm Freddie, an aspiring full stack developer. For the last four months I have been honing my skills at Founders and Coders, an incredible not-for-profit bootcamp that survives on the principle of peer-led learning. The people I've met here in Finsbury Park have not only become great programmers, but great friends too.
                 </BioParagraph>
                 <BioParagraph> 
