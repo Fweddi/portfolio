@@ -2,19 +2,20 @@ import styled, { keyframes } from "styled-components";
 
 const HeaderAnchor = styled.a`
     display: block;
-    position: relative;
-    top: -55vh;
+    position: absolute;
+    top: -20vh;
     visibility: hidden;
 `;
 
 const HeaderSection = styled.section`
   width: 100vw;
   margin-top: 10vh;
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   background-color: #FBF9FE;
   @media only screen and (max-width:768px) {
     height: auto;

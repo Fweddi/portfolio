@@ -33,7 +33,7 @@ const Header = ({info}) => {
                         href={info.link}
                     />
                 </Paragraph>
-                <Attribution href={info.link}>{info.attribution}</Attribution>
+                <Attribution href={info.link} target={info.target}>{info.attribution}</Attribution>
                 <Arrow href='#about'> ↓ </Arrow>
             </HeaderBottom>
         </HeaderSection>

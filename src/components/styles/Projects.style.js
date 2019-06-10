@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ProjectAnchor = styled.a`
 display: block;
-position: relative;
+position: absolute;
 top: -10vh;
 visibility: hidden;
 `;
@@ -11,7 +11,8 @@ const ProjectSection = styled.section`
 width: 100vw;
 height: 90vh;
 display: flex;
-flex-flow: row;
+position: relative;
+flex-flow: column wrap;
 justify-content: center;
 align-items: center;
 background-color: #FBF9FE;
@@ -22,22 +23,41 @@ background-color: #FBF9FE;
 `;
 
 const ProjectTop = styled.div`
-  width: 50vw;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  @media only screen and (max-width:768px) {
-    width: 100vw;
-  }
 `;
 
 const ProjectBottom = styled.div`
   width: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  @media only screen and (max-width:768px) {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+`;
+
+const ProjectLinks = styled.div`
+  display: flex;
   flex-direction: column;
+  width: 80%;
+  align-items: center;
+  padding: 1em;
+  @media only screen and (max-width:768px) {
+  border-bottom: 1px solid black;
+  }
+`;
+
+const ProjectText = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 80%;
+  align-items: center;
 `;
 
 const ProjectParagraph = styled.p`
@@ -55,9 +75,12 @@ const ProjectLink = styled.a`
 const ProjectHeader = styled.h2`
   font-family: "Cutive Mono", monospace;
   color: black;
+  padding-top: 1em;
 `;
 
 export {
+  ProjectText,
+  ProjectLinks,
   ProjectAnchor,
   ProjectSection,
   ProjectTop,

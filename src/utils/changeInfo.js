@@ -5,7 +5,8 @@ const changeInfo = (setInfo) => {
         i3: ' messenger bubbles ',
         i4: ' autocomplete fields…',
         attribution: 'Freddie Preece, full stack developer',
-        link: '#about'
+        link: '#about',
+        target: ''
     }
     setInfo(newInfoObject);
 }
