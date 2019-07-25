@@ -29973,14 +29973,54 @@ module.exports = "/Freddie Preece CV.8d7fda0d.pdf";
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.ProjectHeader = exports.ProjectLink = exports.ProjectParagraph = exports.ProjectBottom = exports.ProjectTop = exports.ProjectSection = exports.ProjectAnchor = exports.ProjectLinks = exports.ProjectText = void 0;
+exports.ProjectDetails = exports.ProjectSectionHeading = exports.ProjectStack = exports.ProjectHeader = exports.ProjectTitle = exports.ProjectLink = exports.ProjectParagraph = exports.ProjectBottom = exports.ProjectTop = exports.ProjectSection = exports.ProjectAnchor = exports.ProjectLinks = exports.ProjectText = void 0;
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _templateObject9() {
+function _templateObject13() {
+  var data = _taggedTemplateLiteral(["\n  margin: 1em 0em;\n"]);
+
+  _templateObject13 = function _templateObject13() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject12() {
   var data = _taggedTemplateLiteral(["\n  font-family: \"Cutive Mono\", monospace;\n  color: black;\n  padding-top: 1em;\n"]);
+
+  _templateObject12 = function _templateObject12() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject11() {
+  var data = _taggedTemplateLiteral(["\n  font-style: italic;\n  margin: 0.2em 0 1em 0;\n"]);
+
+  _templateObject11 = function _templateObject11() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject10() {
+  var data = _taggedTemplateLiteral(["\n  \n"]);
+
+  _templateObject10 = function _templateObject10() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  var data = _taggedTemplateLiteral(["\nfont-family: 'Julius Sans One', sans-serif;\nmargin: 0.5em 0em;\n"]);
 
   _templateObject9 = function _templateObject9() {
     return data;
@@ -29990,7 +30030,7 @@ function _templateObject9() {
 }
 
 function _templateObject8() {
-  var data = _taggedTemplateLiteral(["\n  // color: black;\n"]);
+  var data = _taggedTemplateLiteral(["\n  text-decoration: underline;\n"]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -30020,7 +30060,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  width: 80%;\n  align-items: center;\n  padding: 1em;\n  @media only screen and (max-width:768px) {\n  border-bottom: 1px solid black;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  width: 80%;\n  align-items: center;\n  padding: 1em;\n  @media only screen and (max-width:900px) {\n  border-bottom: 1px solid black;\n  }\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -30030,7 +30070,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  width: auto;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n  @media only screen and (max-width:768px) {\n    flex-direction: column-reverse;\n    height: auto;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: auto;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n  @media only screen and (max-width:900px) {\n    flex-direction: column-reverse;\n    height: auto;\n  }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -30050,7 +30090,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\nwidth: 100vw;\nheight: 90vh;\ndisplay: flex;\nposition: relative;\nflex-flow: column wrap;\njustify-content: center;\nalign-items: center;\nbackground-color: #FBF9FE;\n@media only screen and (max-width:768px) {\n  flex-direction: column;\n  height: auto;\n}\n"]);
+  var data = _taggedTemplateLiteral(["\nwidth: 100vw;\nheight: 90vh;\ndisplay: flex;\nposition: relative;\nflex-flow: column wrap;\njustify-content: center;\nalign-items: center;\nbackground-color: #FBF9FE;\n@media only screen and (max-width:900px) {\n  flex-direction: column;\n  height: auto;\n}\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -30103,9 +30143,25 @@ var ProjectLink = _styledComponents.default.a(_templateObject8());
 
 exports.ProjectLink = ProjectLink;
 
-var ProjectHeader = _styledComponents.default.h2(_templateObject9());
+var ProjectTitle = _styledComponents.default.span(_templateObject9());
+
+exports.ProjectTitle = ProjectTitle;
+
+var ProjectHeader = _styledComponents.default.header(_templateObject10());
 
 exports.ProjectHeader = ProjectHeader;
+
+var ProjectStack = _styledComponents.default.div(_templateObject11());
+
+exports.ProjectStack = ProjectStack;
+
+var ProjectSectionHeading = _styledComponents.default.h2(_templateObject12());
+
+exports.ProjectSectionHeading = ProjectSectionHeading;
+
+var ProjectDetails = _styledComponents.default.div(_templateObject13());
+
+exports.ProjectDetails = ProjectDetails;
 },{"styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/components/Projects.js":[function(require,module,exports) {
 "use strict";
 
@@ -30125,19 +30181,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Projects = function Projects() {
   return _react.default.createElement(_Projects.ProjectSection, null, _react.default.createElement(_Projects.ProjectAnchor, {
     id: "projects"
-  }), _react.default.createElement(_Projects.ProjectTop, null, _react.default.createElement(_Projects.ProjectHeader, null, "Projects")), _react.default.createElement(_Projects.ProjectBottom, null, _react.default.createElement(_Projects.ProjectText, null, _react.default.createElement(_Projects.ProjectParagraph, null, "A year ago, I graduated from Cambridge with a first class degree in Classics. What I loved about the course was how I was able to draw so many different disciplines together (history, literature, philosophy, art) into one coherent whole. This is why I am drawn to developing across the stack, as I like to work with both form and function."), _react.default.createElement(_Projects.ProjectParagraph, null, "The following projects I hope demonstrate the range of my abilities. Two of the projects (Tinkl & Recycling Heroes) I helped build at Founders and Coders, where I led on DevOps and UX respectively. The other (Medias Res) I built by myself in my spare time."), _react.default.createElement(_Projects.ProjectParagraph, null, "To see more about me, take a look at ", _react.default.createElement("a", {
+  }), _react.default.createElement(_Projects.ProjectTop, null, _react.default.createElement(_Projects.ProjectSectionHeading, null, "Projects")), _react.default.createElement(_Projects.ProjectBottom, null, _react.default.createElement(_Projects.ProjectText, null, _react.default.createElement(_Projects.ProjectParagraph, null, "A year ago, I graduated from Cambridge with a first class degree in Classics. What I loved about the course was how I was able to draw so many different disciplines together (history, literature, philosophy, art) into one coherent whole. This is why I am drawn to developing across the stack, as I like to work with both form and function."), _react.default.createElement(_Projects.ProjectParagraph, null, "The attached projects demonstrate the range of my abilities. Two of the projects (Tinkl & Recycling Heroes) I helped build at Founders and Coders, where I led on DevOps and UX respectively. The third project (Zappy) I created along with two other FAC alumni as part of a digital hackathon."), _react.default.createElement(_Projects.ProjectParagraph, null, "To see more about me, take a look at", " ", _react.default.createElement("a", {
     href: _FreddiePreeceCV.default,
     target: "_blank"
-  }, "my CV"), ".")), _react.default.createElement(_Projects.ProjectLinks, null, _react.default.createElement(_Projects.ProjectParagraph, null, _react.default.createElement(_Projects.ProjectLink, {
-    href: "https://github.com/Fweddi/mediasres",
-    target: "_blank"
-  }, _react.default.createElement("li", null, "Medias Res")), _react.default.createElement("i", null, "oAuth, REST, node.js"), _react.default.createElement("br", null), _react.default.createElement("br", null), "A site to see your digital bookshelf.", _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement(_Projects.ProjectLink, {
+  }, "my CV"), ".")), _react.default.createElement(_Projects.ProjectLinks, null, _react.default.createElement(_Projects.ProjectParagraph, null, _react.default.createElement(_Projects.ProjectDetails, null, _react.default.createElement(_Projects.ProjectHeader, null, _react.default.createElement(_Projects.ProjectTitle, null, "Tinkl"), " (", _react.default.createElement(_Projects.ProjectLink, {
     href: "https://github.com/FAC-Sixteen/Tinkl",
     target: "_blank"
-  }, _react.default.createElement("li", null, "Tinkl")), _react.default.createElement("i", null, "handlebars, express, PostgreSQL, heroku, travis, tape"), _react.default.createElement("br", null), _react.default.createElement("br", null), "An app to find the nearest suitable toilet in London.", _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement(_Projects.ProjectLink, {
+  }, "repo"), ", demo)"), _react.default.createElement(_Projects.ProjectStack, null, "handlebars, express, PostgreSQL, heroku, travis, tape"), "An app to find your nearest suitable toilet in London."), _react.default.createElement(_Projects.ProjectDetails, null, _react.default.createElement(_Projects.ProjectHeader, null, _react.default.createElement(_Projects.ProjectTitle, null, "Recycling Heroes"), " (", _react.default.createElement(_Projects.ProjectLink, {
     href: "https://github.com/FAC-Sixteen/RE4.W",
     target: "_blank"
-  }, _react.default.createElement("li", null, "Recycling Heroes")), _react.default.createElement("i", null, "react.js, hooks, p5.js, styled-components, netlify, jest"), _react.default.createElement("br", null), _react.default.createElement("br", null), "A game to teach kids (and adults) what they can and can't recycle.", _react.default.createElement("br", null)))));
+  }, "repo"), ", demo)"), _react.default.createElement(_Projects.ProjectStack, null, "react.js, hooks, react d&d, styled-components, netlify, jest"), "A game to teach kids (and adults) what they can and can't recycle."), _react.default.createElement(_Projects.ProjectDetails, null, _react.default.createElement(_Projects.ProjectHeader, null, _react.default.createElement(_Projects.ProjectTitle, null, "Zappy"), " (", _react.default.createElement(_Projects.ProjectLink, {
+    href: "https://github.com/Fweddi/zappy",
+    target: "_blank"
+  }, "repo"), ", demo)"), _react.default.createElement(_Projects.ProjectStack, null, "HTML, CSS, JavaScript, CircleCI, Chrome Web Store"), "A chrome extension to help you buy clothes as long term investments.")))));
 };
 
 var _default = Projects;
@@ -30333,7 +30389,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63709" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62350" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
