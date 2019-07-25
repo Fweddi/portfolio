@@ -44,9 +44,9 @@ const Projects = () => {
           </ProjectParagraph>
           <ProjectParagraph>
             To see more about me, take a look at{" "}
-            <a href={PDFfilepath} target="_blank">
+            <ProjectLink href={PDFfilepath} target="_blank">
               my CV
-            </a>
+            </ProjectLink>
             .
           </ProjectParagraph>
         </ProjectText>
@@ -62,7 +62,14 @@ const Projects = () => {
                 >
                   repo
                 </ProjectLink>
-                , demo)
+                ,{" "}
+                <ProjectLink
+                  href="https://tinkl.herokuapp.com/"
+                  target="_blank"
+                >
+                  demo
+                </ProjectLink>
+                )
               </ProjectHeader>
               <ProjectStack>
                 handlebars, express, PostgreSQL, heroku, travis, tape
@@ -78,7 +85,14 @@ const Projects = () => {
                 >
                   repo
                 </ProjectLink>
-                , demo)
+                ,{" "}
+                <ProjectLink
+                  href="https://recycling-heroes.netlify.com/"
+                  target="_blank"
+                >
+                  demo
+                </ProjectLink>
+                )
               </ProjectHeader>
               <ProjectStack>
                 react.js, hooks, react d&d, styled-components, netlify, jest
@@ -94,7 +108,14 @@ const Projects = () => {
                 >
                   repo
                 </ProjectLink>
-                , demo)
+                ,{" "}
+                <ProjectLink
+                  href="https://chrome.google.com/webstore/detail/zappy/ejceghnmgiembcbacnnoepnakkjbemab"
+                  target="_blank"
+                >
+                  demo
+                </ProjectLink>
+                )
               </ProjectHeader>
               <ProjectStack>
                 HTML, CSS, JavaScript, CircleCI, Chrome Web Store

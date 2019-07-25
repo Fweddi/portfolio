@@ -74,12 +74,12 @@ const BioParagraph = styled.p`
 `;
 
 export {
-    BioContainer,
-    BioAnchor,
-    BioSection,
-    BioTop,
-    BioBottom,
-    BioImage,
-    BioParagraph,
-    BioHeader
+  BioContainer,
+  BioAnchor,
+  BioSection,
+  BioTop,
+  BioBottom,
+  BioImage,
+  BioParagraph,
+  BioHeader
 }

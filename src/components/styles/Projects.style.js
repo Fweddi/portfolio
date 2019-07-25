@@ -16,7 +16,7 @@ flex-flow: column wrap;
 justify-content: center;
 align-items: center;
 background-color: #FBF9FE;
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:1220px) {
   flex-direction: column;
   height: auto;
 }
@@ -35,7 +35,7 @@ const ProjectBottom = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  @media only screen and (max-width:900px) {
+  @media only screen and (max-width:1220px) {
     flex-direction: column-reverse;
     height: auto;
   }
@@ -46,8 +46,7 @@ const ProjectLinks = styled.div`
   flex-direction: column;
   width: 80%;
   align-items: center;
-  padding: 1em;
-  @media only screen and (max-width:900px) {
+  @media only screen and (max-width:1220px) {
   border-bottom: 1px solid black;
   }
 `;
@@ -70,6 +69,10 @@ const ProjectParagraph = styled.p`
 
 const ProjectLink = styled.a`
   text-decoration: underline;
+
+  :visited {
+    color: blue;
+  }
 `;
 
 const ProjectTitle = styled.span`
@@ -92,7 +95,7 @@ const ProjectSectionHeading = styled.h2`
 `;
 
 const ProjectDetails = styled.div`
-  margin: 1em 0em;
+  margin: 2.5em 0em;
 `
 
 export {

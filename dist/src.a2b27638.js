@@ -29476,7 +29476,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\ncolor: black;\nfont-family: \"Cutive Mono\", monospace;\ntext-decoration: none;\npadding: 0em 2em;\nwidth: auto;\n@media only screen and (max-width:768px) {\n  padding: 0em 1em;\n  font-size: 0.8em;\n}\n\n"]);
+  var data = _taggedTemplateLiteral(["\ncolor: black;\nfont-family: \"Cutive Mono\", monospace;\ntext-decoration: none;\npadding: 0em 2em;\nwidth: auto;\n@media only screen and (max-width:768px) {\n  padding: 0em 1em;\n  font-size: 0.8em;\n}\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -29621,7 +29621,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = _taggedTemplateLiteral(["\n  // color: black;\n  font-family: \"Cutive Mono\", monospace;\n  text-align: center;\n  margin-block-start: 1em;\n"]);
+  var data = _taggedTemplateLiteral(["\n  // color: black;\n  font-family: \"Cutive Mono\", monospace;\n  text-align: center;\n  margin-block-start: 1em;\n  :visited {\n    color: blue;\n  }\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -29980,7 +29980,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject13() {
-  var data = _taggedTemplateLiteral(["\n  margin: 1em 0em;\n"]);
+  var data = _taggedTemplateLiteral(["\n  margin: 2.5em 0em;\n"]);
 
   _templateObject13 = function _templateObject13() {
     return data;
@@ -30030,7 +30030,7 @@ function _templateObject9() {
 }
 
 function _templateObject8() {
-  var data = _taggedTemplateLiteral(["\n  text-decoration: underline;\n"]);
+  var data = _taggedTemplateLiteral(["\n  text-decoration: underline;\n\n  :visited {\n    color: blue;\n  }\n"]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -30060,7 +30060,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  width: 80%;\n  align-items: center;\n  padding: 1em;\n  @media only screen and (max-width:900px) {\n  border-bottom: 1px solid black;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  width: 80%;\n  align-items: center;\n  @media only screen and (max-width:1220px) {\n  border-bottom: 1px solid black;\n  }\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -30070,7 +30070,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  width: auto;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n  @media only screen and (max-width:900px) {\n    flex-direction: column-reverse;\n    height: auto;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: auto;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n  @media only screen and (max-width:1220px) {\n    flex-direction: column-reverse;\n    height: auto;\n  }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -30090,7 +30090,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\nwidth: 100vw;\nheight: 90vh;\ndisplay: flex;\nposition: relative;\nflex-flow: column wrap;\njustify-content: center;\nalign-items: center;\nbackground-color: #FBF9FE;\n@media only screen and (max-width:900px) {\n  flex-direction: column;\n  height: auto;\n}\n"]);
+  var data = _taggedTemplateLiteral(["\nwidth: 100vw;\nheight: 90vh;\ndisplay: flex;\nposition: relative;\nflex-flow: column wrap;\njustify-content: center;\nalign-items: center;\nbackground-color: #FBF9FE;\n@media only screen and (max-width:1220px) {\n  flex-direction: column;\n  height: auto;\n}\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -30181,19 +30181,28 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Projects = function Projects() {
   return _react.default.createElement(_Projects.ProjectSection, null, _react.default.createElement(_Projects.ProjectAnchor, {
     id: "projects"
-  }), _react.default.createElement(_Projects.ProjectTop, null, _react.default.createElement(_Projects.ProjectSectionHeading, null, "Projects")), _react.default.createElement(_Projects.ProjectBottom, null, _react.default.createElement(_Projects.ProjectText, null, _react.default.createElement(_Projects.ProjectParagraph, null, "A year ago, I graduated from Cambridge with a first class degree in Classics. What I loved about the course was how I was able to draw so many different disciplines together (history, literature, philosophy, art) into one coherent whole. This is why I am drawn to developing across the stack, as I like to work with both form and function."), _react.default.createElement(_Projects.ProjectParagraph, null, "The attached projects demonstrate the range of my abilities. Two of the projects (Tinkl & Recycling Heroes) I helped build at Founders and Coders, where I led on DevOps and UX respectively. The third project (Zappy) I created along with two other FAC alumni as part of a digital hackathon."), _react.default.createElement(_Projects.ProjectParagraph, null, "To see more about me, take a look at", " ", _react.default.createElement("a", {
+  }), _react.default.createElement(_Projects.ProjectTop, null, _react.default.createElement(_Projects.ProjectSectionHeading, null, "Projects")), _react.default.createElement(_Projects.ProjectBottom, null, _react.default.createElement(_Projects.ProjectText, null, _react.default.createElement(_Projects.ProjectParagraph, null, "A year ago, I graduated from Cambridge with a first class degree in Classics. What I loved about the course was how I was able to draw so many different disciplines together (history, literature, philosophy, art) into one coherent whole. This is why I am drawn to developing across the stack, as I like to work with both form and function."), _react.default.createElement(_Projects.ProjectParagraph, null, "The attached projects demonstrate the range of my abilities. Two of the projects (Tinkl & Recycling Heroes) I helped build at Founders and Coders, where I led on DevOps and UX respectively. The third project (Zappy) I created along with two other FAC alumni as part of a digital hackathon."), _react.default.createElement(_Projects.ProjectParagraph, null, "To see more about me, take a look at", " ", _react.default.createElement(_Projects.ProjectLink, {
     href: _FreddiePreeceCV.default,
     target: "_blank"
   }, "my CV"), ".")), _react.default.createElement(_Projects.ProjectLinks, null, _react.default.createElement(_Projects.ProjectParagraph, null, _react.default.createElement(_Projects.ProjectDetails, null, _react.default.createElement(_Projects.ProjectHeader, null, _react.default.createElement(_Projects.ProjectTitle, null, "Tinkl"), " (", _react.default.createElement(_Projects.ProjectLink, {
     href: "https://github.com/FAC-Sixteen/Tinkl",
     target: "_blank"
-  }, "repo"), ", demo)"), _react.default.createElement(_Projects.ProjectStack, null, "handlebars, express, PostgreSQL, heroku, travis, tape"), "An app to find your nearest suitable toilet in London."), _react.default.createElement(_Projects.ProjectDetails, null, _react.default.createElement(_Projects.ProjectHeader, null, _react.default.createElement(_Projects.ProjectTitle, null, "Recycling Heroes"), " (", _react.default.createElement(_Projects.ProjectLink, {
+  }, "repo"), ",", " ", _react.default.createElement(_Projects.ProjectLink, {
+    href: "https://tinkl.herokuapp.com/",
+    target: "_blank"
+  }, "demo"), ")"), _react.default.createElement(_Projects.ProjectStack, null, "handlebars, express, PostgreSQL, heroku, travis, tape"), "An app to find your nearest suitable toilet in London."), _react.default.createElement(_Projects.ProjectDetails, null, _react.default.createElement(_Projects.ProjectHeader, null, _react.default.createElement(_Projects.ProjectTitle, null, "Recycling Heroes"), " (", _react.default.createElement(_Projects.ProjectLink, {
     href: "https://github.com/FAC-Sixteen/RE4.W",
     target: "_blank"
-  }, "repo"), ", demo)"), _react.default.createElement(_Projects.ProjectStack, null, "react.js, hooks, react d&d, styled-components, netlify, jest"), "A game to teach kids (and adults) what they can and can't recycle."), _react.default.createElement(_Projects.ProjectDetails, null, _react.default.createElement(_Projects.ProjectHeader, null, _react.default.createElement(_Projects.ProjectTitle, null, "Zappy"), " (", _react.default.createElement(_Projects.ProjectLink, {
+  }, "repo"), ",", " ", _react.default.createElement(_Projects.ProjectLink, {
+    href: "https://recycling-heroes.netlify.com/",
+    target: "_blank"
+  }, "demo"), ")"), _react.default.createElement(_Projects.ProjectStack, null, "react.js, hooks, react d&d, styled-components, netlify, jest"), "A game to teach kids (and adults) what they can and can't recycle."), _react.default.createElement(_Projects.ProjectDetails, null, _react.default.createElement(_Projects.ProjectHeader, null, _react.default.createElement(_Projects.ProjectTitle, null, "Zappy"), " (", _react.default.createElement(_Projects.ProjectLink, {
     href: "https://github.com/Fweddi/zappy",
     target: "_blank"
-  }, "repo"), ", demo)"), _react.default.createElement(_Projects.ProjectStack, null, "HTML, CSS, JavaScript, CircleCI, Chrome Web Store"), "A chrome extension to help you buy clothes as long term investments.")))));
+  }, "repo"), ",", " ", _react.default.createElement(_Projects.ProjectLink, {
+    href: "https://chrome.google.com/webstore/detail/zappy/ejceghnmgiembcbacnnoepnakkjbemab",
+    target: "_blank"
+  }, "demo"), ")"), _react.default.createElement(_Projects.ProjectStack, null, "HTML, CSS, JavaScript, CircleCI, Chrome Web Store"), "A chrome extension to help you buy clothes as long term investments.")))));
 };
 
 var _default = Projects;
@@ -30389,7 +30398,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62350" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49880" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
