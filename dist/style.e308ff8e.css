@@ -1,12 +1,41 @@
-p::selection { background-color: yellow; }
-span::selection { background-color: yellow; }
-a::selection { background-color: yellow; }
-ul::selection { background-color: yellow; }
-li::selection { background-color: yellow; }
-i::selection { background-color: yellow; }
+p::selection {
+    background-color: yellow;
+}
+
+span::selection {
+    background-color: yellow;
+}
+
+a::selection {
+    background-color: yellow;
+}
+
+ul::selection {
+    background-color: yellow;
+}
+
+li::selection {
+    background-color: yellow;
+}
+
+i::selection {
+    background-color: yellow;
+}
+
+div::selection {
+    background-color: yellow;
+}
+
+body::selection {
+    background-color: yellow;
+}
+
+header::selection {
+    background-color: yellow;
+}
 
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 
 li {
@@ -15,19 +44,12 @@ li {
 
 
 /* Phone */
-@media only screen and (max-width:320px) {
-
-
-}
+@media only screen and (max-width:320px) {}
 
 /* Tablet */
-@media only screen and (min-width:321px) and (max-width:768px) {
-
-}
+@media only screen and (min-width:321px) and (max-width:768px) {}
 
 /* Desktop */
-@media only screen and (min-width:769px) {
-    
-}
+@media only screen and (min-width:769px) {}
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */

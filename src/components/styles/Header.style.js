@@ -61,6 +61,9 @@ const Attribution = styled.a`
   font-family: "Cutive Mono", monospace;
   text-align: center;
   margin-block-start: 1em;
+  :visited {
+    color: blue;
+  }
 `
 
 const Arrow = styled.a`
@@ -137,13 +140,13 @@ const Redacted = styled.span`
 `;
 
 export {
-    HeaderAnchor,
-    HeaderTop,
-    HeaderBottom,
-    HeaderSection,
-    Paragraph,
-    KeillerGif,
-    Redacted,
-    Attribution,
-    Arrow,
+  HeaderAnchor,
+  HeaderTop,
+  HeaderBottom,
+  HeaderSection,
+  Paragraph,
+  KeillerGif,
+  Redacted,
+  Attribution,
+  Arrow,
 }

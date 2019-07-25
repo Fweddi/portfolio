@@ -42,12 +42,11 @@ width: auto;
   padding: 0em 1em;
   font-size: 0.8em;
 }
-
 `;
 
 export {
-    NavBar,
-    NavLink,
-    NavHeading,
-    NavSound
-  };
+  NavBar,
+  NavLink,
+  NavHeading,
+  NavSound
+};

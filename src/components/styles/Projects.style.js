@@ -16,7 +16,7 @@ flex-flow: column wrap;
 justify-content: center;
 align-items: center;
 background-color: #FBF9FE;
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1220px) {
   flex-direction: column;
   height: auto;
 }
@@ -35,7 +35,7 @@ const ProjectBottom = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  @media only screen and (max-width:768px) {
+  @media only screen and (max-width:1220px) {
     flex-direction: column-reverse;
     height: auto;
   }
@@ -46,8 +46,7 @@ const ProjectLinks = styled.div`
   flex-direction: column;
   width: 80%;
   align-items: center;
-  padding: 1em;
-  @media only screen and (max-width:768px) {
+  @media only screen and (max-width:1220px) {
   border-bottom: 1px solid black;
   }
 `;
@@ -69,14 +68,35 @@ const ProjectParagraph = styled.p`
 `;
 
 const ProjectLink = styled.a`
-  // color: black;
+  text-decoration: underline;
+
+  :visited {
+    color: blue;
+  }
 `;
 
-const ProjectHeader = styled.h2`
+const ProjectTitle = styled.span`
+font-family: 'Julius Sans One', sans-serif;
+margin: 0.5em 0em;
+`
+const ProjectHeader = styled.header`
+  
+`;
+
+const ProjectStack = styled.div`
+  font-style: italic;
+  margin: 0.2em 0 1em 0;
+`;
+
+const ProjectSectionHeading = styled.h2`
   font-family: "Cutive Mono", monospace;
   color: black;
   padding-top: 1em;
 `;
+
+const ProjectDetails = styled.div`
+  margin: 2.5em 0em;
+`
 
 export {
   ProjectText,
@@ -87,5 +107,9 @@ export {
   ProjectBottom,
   ProjectParagraph,
   ProjectLink,
-  ProjectHeader
+  ProjectTitle,
+  ProjectHeader,
+  ProjectStack,
+  ProjectSectionHeading,
+  ProjectDetails
 };
